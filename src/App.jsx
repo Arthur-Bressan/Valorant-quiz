@@ -148,6 +148,9 @@ function App() {
 	}
 
 	function checkAnswer() {
+		if (!input.trim()) {
+			return
+		}
 		if (input.trim().toLowerCase() === question.agent.toLowerCase()) {
 			const points = maxPoints - attempt
 			Correct_audio.currentTime = 0
