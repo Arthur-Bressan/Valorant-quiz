@@ -1,12 +1,63 @@
-# React + Vite
+🧠 Emoji Guess – Jogo de Adivinhação com Emojis
+Emoji Guess é um mini-jogo interativo onde o jogador tenta adivinhar uma sequência de emojis (incluindo bandeiras de países) em até quatro tentativas. A cada tentativa, uma animação é exibida e um som de feedback é tocado.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎯 Objetivo do Jogo
+Descubra a sequência correta de emojis usando as dicas visuais fornecidas. Cada tentativa revela uma nova caixa com efeito visual e som para criar uma experiência mais dinâmica.
 
-Currently, two official plugins are available:
+🛠️ Habilidades Desenvolvidas
+Durante o desenvolvimento deste projeto, fui desafiado a combinar lógica, interatividade e experiência do usuário. Aqui estão as habilidades técnicas que pratiquei e desenvolvi:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎨 Front-end com React
+Criação de componentes funcionais reutilizáveis com useEffect e useRef
 
-## Expanding the ESLint configuration
+Controle de estados dinâmicos baseados em interações do usuário (attempt, showResult, etc.)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⚙️ DOM Animations com Web Animations API
+Animação fluida de rotação (rotateY) e desfoque (blur) usando element.animate()
+
+Controle preciso da temporização (offsets) e curvas de animação personalizadas (cubic-bezier)
+
+🔊 Manipulação de Áudio em Interfaces
+Sincronização de áudio com animações
+
+Preload e otimização de som para evitar atrasos em dispositivos móveis
+
+Compatibilidade cross-platform (desktop e mobile)
+
+📁 Organização de Projeto
+Uso da pasta public/assets para assets estáticos como áudio e imagens
+
+Estrutura modular e semântica para componentes e estilos
+
+📱 Otimização Mobile
+Identificação e solução de delays específicos em navegadores mobile
+
+Estratégias como pré-carregamento de áudio e fallback para diferentes formatos
+
+🚀 Como Rodar o Projeto
+bash
+Copiar
+Editar
+# Instale as dependências
+npm install
+
+# Rode em ambiente local
+npm run dev
+📌 Tecnologias Utilizadas
+React.js
+
+CSS (Keyframes + Web Animations API)
+
+JavaScript ES6+
+
+HTML5 Audio API
+
+💡 Próximos Passos (Ideias Futuras)
+Sistema de pontuação e ranking
+
+Animações diferentes por tipo de emoji
+
+Compartilhamento de resultados nas redes sociais
+
+👨‍💻 Sobre o Desenvolvedor
+Este projeto é parte do meu processo de evolução como programador front-end. Com ele, busquei desenvolver minha autonomia, aprender a resolver problemas reais como atrasos de áudio no mobile, e aperfeiçoar minha capacidade de criar experiências ricas e envolventes com JavaScript e React.
