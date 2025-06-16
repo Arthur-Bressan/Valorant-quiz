@@ -53,7 +53,7 @@ npm install
 npm run dev
 ```
 
-###📌 Tecnologias Utilizadas
+### 📌 Tecnologias Utilizadas
 - React.js
 
 - CSS (Keyframes + Web Animations API)
@@ -62,7 +62,7 @@ npm run dev
 
 - HTML5 Audio API
 
-###💡 Próximos Passos (Ideias Futuras)
+### 💡 Próximos Passos (Ideias Futuras)
  - Sistema de pontuação e ranking
 
 - Outros modos de jogo
