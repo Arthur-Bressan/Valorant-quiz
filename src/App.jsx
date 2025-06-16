@@ -151,6 +151,16 @@ function App() {
 		if (!input.trim()) {
 			return
 		}
+
+		// Verifica se o chute é um agente válido
+		const isValidAgent = agentNames.some(
+			agent => agent.toLowerCase() === input.trim().toLowerCase()
+		)
+		if (!isValidAgent) {
+			setMessage('Digite o nome de um agente válido do Valorant!')
+			return
+		}
+
 		if (input.trim().toLowerCase() === question.agent.toLowerCase()) {
 			const points = maxPoints - attempt
 			Correct_audio.currentTime = 0
