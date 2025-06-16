@@ -1,10 +1,10 @@
 .answer-input-container {
 	display: grid;
 	grid-template-areas:
-		"input select"
-		"button button";
+		"input button";
 	gap: 0.5rem;
 	margin-bottom: 1rem;
+	position: relative;
 }
 
 .answer-input-container button {
@@ -15,19 +15,8 @@
 	grid-area: input;
 }
 
-.answer-input-container select {
-	grid-area: select;
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	padding-right: 2.5rem;
-	background: url('data:image/svg+xml;utf8,<svg fill="%23FAF9F6" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>')
-		no-repeat right 1rem center/1.2em auto;
-}
-
 .answer-input-container input,
-.answer-input-container button,
-.answer-input-container select {
+.answer-input-container button {
 	border-radius: 8px;
 	border: 1px solid transparent;
 	padding: 0.6em 1.2em;
@@ -40,23 +29,56 @@
 }
 
 .answer-input-container input:hover,
-.answer-input-container button:hover,
-.answer-input-container select:hover {
+.answer-input-container button:hover {
 	box-shadow: 0 0 3px 0.5px #646cff;
+}
+
+.suggestions-list {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background: #222;
+	z-index: 10;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px #0002;
+	max-height: 180px;
+	overflow-y: auto;
+	scrollbar-width: thin;
+	scrollbar-color: #1a1a1a #22222200;
+}
+
+.suggestions-list::-webkit-scrollbar {
+	width: 6px;
+	background: #22222200;
+}
+.suggestions-list::-webkit-scrollbar-thumb {
+	background: #1a1a1a;
+	border-radius: 4px;
+}
+.suggestions-list::-webkit-scrollbar-button {
+	display: none;
+	height: 0;
+}
+.suggestions-list::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+.suggestion {
+	padding: 0.5em 1em;
+	cursor: pointer;
+}
+
+.suggestion:hover {
+	background: #333;
 }
 
 @media (prefers-color-scheme: light) {
 	.answer-input-container input,
-	.answer-input-container button,
-	.answer-input-container select {
+	.answer-input-container button {
 		background-color: #ffffff00;
 		border-width: 1px;
 		border-color: #242424;
-	}
-
-	.answer-input-container select {
-		background: url('data:image/svg+xml;utf8,<svg fill="%23242424" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>')
-			no-repeat right 1rem center/1.2em auto;
 	}
 }
 
@@ -64,7 +86,6 @@
 	.answer-input-container {
 		grid-template-areas:
 			"input"
-			"select"
 			"button";
 		grid-template-columns: 1fr;
 		grid-template-rows: auto auto auto;
