@@ -1,12 +1,12 @@
-# 🧠 Emoji Guess – Jogo de Adivinhação com Emojis
+# 🧠 Valorant Guess – Jogo de Adivinhação com Emojis Sobre Valorant
 
-**Emoji Guess** é um mini-jogo interativo onde o jogador tenta adivinhar uma sequência de emojis (incluindo bandeiras de países) em até quatro tentativas. A cada tentativa, uma animação é exibida e um som de feedback é tocado.
+**Valorant Guess** é um mini-jogo interativo onde o jogador tenta adivinhar um Agente do valorant com base em uma sequência de emojis (incluindo bandeiras de países) em até quatro tentativas.
 
 ---
 
 ## 🎯 Objetivo do Jogo
 
-Descubra a sequência correta de emojis usando as dicas visuais fornecidas. Cada tentativa revela uma nova caixa com efeito visual e som para criar uma experiência mais dinâmica.
+Descubra o agente do valorant com base na sequência de emojis usando as dicas visuais fornecidas. Cada tentativa revela um novo emoji para você descobrir o agente com 4 tentativas e um sistema de pontuação o quanto menos tentativas forem usadas mais pontos você recebe.
 
 ---
 
