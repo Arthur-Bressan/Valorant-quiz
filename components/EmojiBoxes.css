@@ -1,0 +1,50 @@
+.emoji-boxes-container {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin: 2rem 0;
+}
+
+.emoji-box {
+	width: 64px;
+	height: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.5rem;
+	border: 2px solid #888;
+	border-radius: 12px;
+	background: #222;
+	transition: border-color 0.3s, box-shadow 0.3s, filter 0.3s;
+	box-shadow: none;
+	filter: none;
+	perspective: 600px;
+}
+
+.emoji-box.rotating {
+	animation: emoji-rotate-blur 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.emoji-box-blue {
+	border-color: #646cff !important;
+	box-shadow: 0 0 8px #646cff88 !important;
+}
+
+.emoji-box-green {
+	border-color: #2ecc40 !important;
+	box-shadow: 0 0 16px 4px #2ecc4088 !important;
+	filter: blur(2px) !important;
+}
+
+.emoji-flag-img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+@media (prefers-color-scheme: light) {
+	.emoji-box {
+		background-color: #e6e6e6;
+		box-shadow: 0 0 3px 0.5px #646cff;
+	}
+}
