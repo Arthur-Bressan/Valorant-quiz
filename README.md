@@ -40,7 +40,34 @@ Durante o desenvolvimento deste projeto, fui desafiado a combinar lógica, inter
 - Identificação e solução de **delays específicos em navegadores mobile**
 - Estratégias como pré-carregamento de áudio e fallback para diferentes formatos
 
+
 ---
 
-## 📂 Estrutura do Projeto
+## 🚀 Como Rodar o Projeto
 
+```bash
+# Instale as dependências
+npm install
+
+# Rode em ambiente local
+npm run dev
+```
+
+###📌 Tecnologias Utilizadas
+- React.js
+
+- CSS (Keyframes + Web Animations API)
+
+- JavaScript ES6+
+
+- HTML5 Audio API
+
+###💡 Próximos Passos (Ideias Futuras)
+ - Sistema de pontuação e ranking
+
+- Outros modos de jogo
+
+ - Compartilhamento de resultados nas redes sociais
+
+### 👨‍💻 Sobre o Desenvolvedor
+Este projeto é parte do meu processo de evolução como programador front-end. Com ele, busquei desenvolver minha autonomia, aprender a resolver problemas reais como atrasos de áudio no mobile, e aperfeiçoar minha capacidade de criar experiências ricas e envolventes com JavaScript e React.
